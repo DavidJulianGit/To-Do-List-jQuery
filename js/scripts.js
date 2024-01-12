@@ -45,6 +45,7 @@
       let inputValue = $('#input').val();
       li.append(inputValue);
 
+      // check for existing input
       if(inputValue === '')
       {
         alert("You must write something!");
@@ -60,20 +61,23 @@
         li.toggleClass('strike');
       }
       
-      // add eventlistener to li
+      // Add eventlistener to li
       li.on('dblclick', crossOut);
 
-      //3(i). Adding the delete button "X": 
+      //3(i). Adding the delete button "X" to li
       let crossOutButton = $('<crossOutButton></crossOutButton');
       crossOutButton.append(document.createTextNode("X"));
       li.append(crossOutButton);
- 
+
+      // Add eventlistener to crossOutButton
       crossOutButton.on("click", deleteListItem);
+
       //3(ii). Adding CLASS DELETE (DISPLAY: NONE) from the css:
       function deleteListItem(){
             li.addClass("delete")
       }
-      // 4. Reordering the items: 
+
+      // 4. Making listIems reorder-able 
       $('#list').sortable();
     }
     
