@@ -29,13 +29,7 @@ To run this project locally, follow these steps:
    git clone https://github.com/DavidJulianGit/To-Do-List-jQuery.git
    ```
 
-2. **Navigate to the project directory**
-
-   ```bash
-   cd to-do-list-app
-   ```
-
-3. **Start app**
+2. **Start app**
    Open index.html in a browser.
 
 ## Deployment
